@@ -67,6 +67,28 @@ body {
   object-fit: cover;
   animation: slowZoom 14s ease-in-out infinite alternate;
 }
+.hero-image {
+  position: relative;
+}
+
+.hero-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px;
+  background: linear-gradient(
+    transparent,
+    rgba(0,0,0,0.75)
+  );
+}
+
+.hero-image-overlay span {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 
 .sections {
   max-width: 1250px;
@@ -329,4 +351,38 @@ body {
   .mockup {
     min-height: 320px;
   }
+}
+.pdf-cover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.22);
+  transition: 0.4s ease;
+}
+
+.pdf-cover:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.pdf-cover img {
+  width: 100%;
+  display: block;
+}
+
+.pdf-cover::after {
+  content: "Anteprima documento";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 18px;
+
+  color: white;
+  font-weight: 700;
+
+  background: linear-gradient(
+    transparent,
+    rgba(0,0,0,0.8)
+  );
 }
