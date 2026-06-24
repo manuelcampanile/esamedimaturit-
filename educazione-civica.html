@@ -5,41 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Educazione Civica - Manuel Campanile</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
-<body class="page-body">
-
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
-  <div class="bg-grid"></div>
-
-  <nav class="topbar">
-    <a href="index.html" class="back-btn">← Torna alla home</a>
-  </nav>
+<body>
+  <div class="page-bg"></div>
 
   <main class="doc-page">
-    <section class="doc-hero reveal">
-      <div class="doc-text">
-        <span class="doc-tag">Educazione Civica</span>
-        <h1>Sviluppo economico e sostenibilità</h1>
-        <p>
-          Un approfondimento sul rapporto tra sviluppo economico, responsabilità collettiva, sostenibilità e futuro.
-        </p>
+    <div class="doc-page-wrap">
+      <a href="index.html" class="top-back">
+        <i class="fa-solid fa-arrow-left"></i>
+        Torna alla home
+      </a>
 
-        <div class="doc-actions">
-          <a href="educazione-civica-2026.pdf" target="_blank" class="doc-btn primary-btn">Apri PDF</a>
-          <a href="educazione-civica-2026.pdf" download class="doc-btn secondary-btn">Scarica PDF</a>
+      <section class="doc-hero">
+        <div class="doc-preview">
+          <img src="educazione-civica-cover.png" alt="Anteprima Educazione Civica">
         </div>
-      </div>
 
-      <div class="doc-cover">
-        <img src="educazione-civica-cover.png" alt="Copertina Educazione Civica">
-      </div>
-    </section>
+        <div class="doc-info">
+          <h1>Educazione Civica</h1>
+          <p>
+            Un approfondimento sul tema dello sviluppo economico e della sostenibilità,
+            con l’obiettivo di riflettere sul rapporto tra crescita, ambiente,
+            diritti e responsabilità verso il futuro.
+          </p>
+
+          <div class="doc-actions">
+            <a href="educazione-civica-2026.pdf" target="_blank" class="btn btn-primary">
+              <i class="fa-regular fa-file-pdf"></i>
+              Apri PDF
+            </a>
+
+            <a href="index.html" class="btn btn-secondary">
+              <i class="fa-solid fa-house"></i>
+              Torna alla home
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
