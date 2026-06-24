@@ -1,15 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const reveals = document.querySelectorAll(".reveal");
+const glow = document.querySelector('.cursor-glow');
+const heroCard = document.querySelector('.hero-visual-card');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  }, {
-    threshold: 0.12
-  });
+document.addEventListener('mousemove', (e) => {
+  if (glow) {
+    glow.style.left = `${e.clientX}px`;
+    glow.style.top = `${e.clientY}px`;
+  }
 
-  reveals.forEach(el => observer.observe(el));
+  if (heroCard && window.innerWidth > 900) {
+    const x = (window.innerWidth / 2 - e.clientX) / 45;
+    const y = (window.innerHeight / 2 - e.clientY) / 45;
+    heroCard.style.transform = `translateY(-4px) rotateY(${-x}deg) rotateX(${y}deg)`;
+  }
+});
+
+document.addEventListener('mouseleave', () => {
+  if (heroCard) {
+    heroCard.style.transform = `translateY(0px) rotateY(0deg) rotateX(0deg)`;
+  }
 });

@@ -4,46 +4,78 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FSL (ex PCTO) - Manuel Campanile</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
-  <div class="page-bg"></div>
+<body class="doc-page">
 
-  <main class="doc-page">
-    <div class="doc-page-wrap">
-      <a href="index.html" class="top-back">
-        <i class="fa-solid fa-arrow-left"></i>
-        Torna alla home
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <div class="brand-badge">MC</div>
+        <div class="brand-text">
+          <span class="brand-name">Manuel Campanile</span>
+          <span class="brand-class">Classe 5CSA</span>
+        </div>
       </a>
 
-      <section class="doc-hero">
-        <div class="doc-preview">
-          <img src="pcto-cover.png" alt="Anteprima FSL">
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="document-page">
+    <div class="container">
+      <section class="document-hero reveal">
+        <div class="document-text">
+          <p class="eyebrow">Sezione 02</p>
+          <h1>FSL (ex PCTO)</h1>
+          <p class="document-subtitle">
+            Le esperienze formative svolte nel triennio, tra tecnologia, ricerca, laboratorio e orientamento.
+          </p>
+        </div>
+      </section>
+
+      <section class="document-card reveal delay-1">
+        <div class="document-cover">
+          <img src="pcto-cover.png" alt="Copertina FSL ex PCTO">
         </div>
 
-        <div class="doc-info">
-          <h1>FSL (ex PCTO)</h1>
+        <div class="document-info">
+          <h2>Documento PDF</h2>
           <p>
-            Il percorso di formazione svolto tra orientamento, competenze,
-            attività e crescita personale, con particolare attenzione alle
-            esperienze che hanno contribuito al mio sviluppo scolastico e futuro.
+            In questa sezione sono raccolte le esperienze più significative del mio percorso FSL:
+            attività, competenze, riflessioni e crescita maturata nel corso degli anni.
           </p>
 
-          <div class="doc-actions">
+          <div class="document-actions">
             <a href="pcto.pdf" target="_blank" class="btn btn-primary">
-              <i class="fa-regular fa-file-pdf"></i>
-              Apri PDF
+              <i class="fa-regular fa-file-pdf"></i> Apri PDF
             </a>
-
-            <a href="index.html" class="btn btn-secondary">
-              <i class="fa-solid fa-house"></i>
-              Torna alla home
+            <a href="pcto.pdf" download class="btn btn-secondary">
+              <i class="fa-solid fa-download"></i> Scarica PDF
             </a>
           </div>
         </div>
       </section>
     </div>
   </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <h4>FSL (ex PCTO)</h4>
+        <p>Manuel Campanile</p>
+      </div>
+      <p class="footer-copy">© 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

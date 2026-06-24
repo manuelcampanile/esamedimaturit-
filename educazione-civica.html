@@ -4,46 +4,78 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Educazione Civica - Manuel Campanile</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
-  <div class="page-bg"></div>
+<body class="doc-page">
 
-  <main class="doc-page">
-    <div class="doc-page-wrap">
-      <a href="index.html" class="top-back">
-        <i class="fa-solid fa-arrow-left"></i>
-        Torna alla home
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <div class="brand-badge">MC</div>
+        <div class="brand-text">
+          <span class="brand-name">Manuel Campanile</span>
+          <span class="brand-class">Classe 5CSA</span>
+        </div>
       </a>
 
-      <section class="doc-hero">
-        <div class="doc-preview">
-          <img src="educazione-civica-cover.png" alt="Anteprima Educazione Civica">
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="document-page">
+    <div class="container">
+      <section class="document-hero reveal">
+        <div class="document-text">
+          <p class="eyebrow">Sezione 03</p>
+          <h1>Educazione Civica</h1>
+          <p class="document-subtitle">
+            Un approfondimento dedicato a sviluppo economico, sostenibilità e responsabilità.
+          </p>
+        </div>
+      </section>
+
+      <section class="document-card reveal delay-1">
+        <div class="document-cover">
+          <img src="educazione-civica-cover.png" alt="Copertina Educazione Civica">
         </div>
 
-        <div class="doc-info">
-          <h1>Educazione Civica</h1>
+        <div class="document-info">
+          <h2>Documento PDF</h2>
           <p>
-            Un approfondimento sul tema dello sviluppo economico e della sostenibilità,
-            con l’obiettivo di riflettere sul rapporto tra crescita, ambiente,
-            diritti e responsabilità verso il futuro.
+            Questa sezione raccoglie il lavoro svolto in Educazione Civica, con attenzione ai temi
+            della sostenibilità, dello sviluppo e della consapevolezza civica.
           </p>
 
-          <div class="doc-actions">
-            <a href="educazione-civica-2026.pdf" target="_blank" class="btn btn-primary">
-              <i class="fa-regular fa-file-pdf"></i>
-              Apri PDF
+          <div class="document-actions">
+            <a href="educazione-civica.pdf" target="_blank" class="btn btn-primary">
+              <i class="fa-regular fa-file-pdf"></i> Apri PDF
             </a>
-
-            <a href="index.html" class="btn btn-secondary">
-              <i class="fa-solid fa-house"></i>
-              Torna alla home
+            <a href="educazione-civica.pdf" download class="btn btn-secondary">
+              <i class="fa-solid fa-download"></i> Scarica PDF
             </a>
           </div>
         </div>
       </section>
     </div>
   </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <div>
+        <h4>Educazione Civica</h4>
+        <p>Manuel Campanile</p>
+      </div>
+      <p class="footer-copy">© 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
