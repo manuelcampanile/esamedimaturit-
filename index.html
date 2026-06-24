@@ -1,59 +1,108 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manuel Campanile | Capolavoro</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manuel Campanile</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <main class="home">
+  <!-- BACKGROUND DECOR -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
 
-    <section class="hero">
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
 
+    <div class="hero-content">
       <div class="hero-text">
+        <p class="hero-class">Classe 5CSA</p>
         <h1>Manuel Campanile</h1>
-        <h2>Classe 5CSA</h2>
-
-        <p class="quote">
+        <p class="hero-quote">
           “Ogni esperienza lascia un segno: il mio percorso racconta chi sono oggi e chi voglio diventare domani.”
         </p>
       </div>
 
-      <div class="hero-image">
-  <img src="quote-image.png" alt="Il mio percorso">
-  <div class="hero-image-overlay">
-    <span>Il mio percorso</span>
-  </div>
-</div>
+      <div class="hero-image-card">
+        <img src="quote-image.png" alt="Immagine simbolica del percorso personale">
+      </div>
+    </div>
 
+    <a href="#sezioni" class="scroll-indicator">
+      <span></span>
+    </a>
+  </header>
+
+  <!-- SEZIONI -->
+  <main id="sezioni" class="sections-wrapper">
+    <section class="cards-section">
+      <div class="section-intro">
+        <h2>Le mie sezioni</h2>
+        <p>
+          Un percorso costruito tra crescita personale, formazione e nuove prospettive.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- PRESENTAZIONE -->
+        <a href="presentazione.html" target="_blank" class="section-card reveal">
+          <div class="card-image">
+            <img src="presentazione-cover.png" alt="Copertina Presentazione">
+            <div class="card-glow"></div>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">Presentazione</span>
+            <h3>Presentazione personale</h3>
+            <p>
+              Scelte, passioni, sport, volontariato e crescita personale lungo il mio percorso.
+            </p>
+            <span class="card-link">Apri sezione →</span>
+          </div>
+        </a>
+
+        <!-- PCTO -->
+        <a href="pcto.html" target="_blank" class="section-card reveal">
+          <div class="card-image">
+            <img src="pcto-cover.png" alt="Copertina FSL ex PCTO">
+            <div class="card-glow"></div>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">FSL (ex PCTO)</span>
+            <h3>Formazione e orientamento</h3>
+            <p>
+              Esperienze tra tecnologia, laboratorio, ricerca e orientamento universitario.
+            </p>
+            <span class="card-link">Apri sezione →</span>
+          </div>
+        </a>
+
+        <!-- EDUCAZIONE CIVICA -->
+        <a href="educazione-civica.html" target="_blank" class="section-card reveal">
+          <div class="card-image">
+            <img src="educazione-civica-cover.png" alt="Copertina Educazione Civica">
+            <div class="card-glow"></div>
+          </div>
+          <div class="card-content">
+            <span class="card-tag">Educazione Civica</span>
+            <h3>Sviluppo economico e sostenibilità</h3>
+            <p>
+              Un percorso tra responsabilità, economia, cittadinanza attiva e futuro sostenibile.
+            </p>
+            <span class="card-link">Apri sezione →</span>
+          </div>
+        </a>
+
+      </div>
     </section>
-
-    <section class="sections">
-
-      <a href="Presentazione.html" class="section-card">
-        <span>01</span>
-        <h3>Presentazione personale</h3>
-        <p>Le mie scelte, le mie passioni e il percorso che mi ha formato.</p>
-      </a>
-
-      <a href="pcto.html" class="section-card">
-        <span>02</span>
-        <h3>FSL <small>(ex PCTO)</small></h3>
-        <p>Tecnologia, ricerca scientifica, laboratorio e orientamento.</p>
-      </a>
-
-      <a href="educazione-civica.html" class="section-card">
-        <span>03</span>
-        <h3>Educazione Civica</h3>
-        <p>Sviluppo economico, sostenibilità e responsabilità verso il futuro.</p>
-      </a>
-
-    </section>
-
   </main>
 
+  <script src="script.js"></script>
 </body>
 </html>

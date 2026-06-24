@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Presentazione personale</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presentazione personale - Manuel Campanile</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
+<body class="page-body">
 
-<body class="doc-page">
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
 
-  <a href="index.html" class="back">← Torna alla Home</a>
+  <nav class="topbar">
+    <a href="index.html" class="back-btn">← Torna alla home</a>
+  </nav>
 
-  <section class="doc-hero">
-    <span>01</span>
-    <h1>Presentazione personale</h1>
-    <p>Un racconto del mio percorso, delle mie passioni e delle esperienze che mi hanno aiutato a crescere.</p>
-  </section>
+  <main class="doc-page">
+    <section class="doc-hero reveal">
+      <div class="doc-text">
+        <span class="doc-tag">Presentazione</span>
+        <h1>Presentazione personale</h1>
+        <p>
+          Una sintesi del mio percorso personale: interessi, sport, esperienze, volontariato e crescita.
+        </p>
 
-  <section class="doc-card">
+        <div class="doc-actions">
+          <a href="Presentazione.pdf" target="_blank" class="doc-btn primary-btn">Apri PDF</a>
+          <a href="Presentazione.pdf" download class="doc-btn secondary-btn">Scarica PDF</a>
+        </div>
+      </div>
 
-  <div>
-    <h2>Le mie scelte raccontano chi sto diventando</h2>
+      <div class="doc-cover">
+        <img src="presentazione-cover.png" alt="Copertina Presentazione personale">
+      </div>
+    </section>
+  </main>
 
-    <p>
-      Sport, volontariato, crescita personale e obiettivi futuri:
-      una panoramica delle esperienze che hanno contribuito
-      alla mia formazione.
-    </p>
-
-    <div class="doc-buttons">
-      <a href="Presentazione.pdf" target="_blank">Apri PDF</a>
-      <a href="Presentazione.pdf" download>Scarica</a>
-    </div>
-  </div>
-
-  <div class="pdf-cover">
-    <img src="presentazione-cover.png"
-         alt="Presentazione personale">
-  </div>
-
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
