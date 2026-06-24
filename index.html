@@ -9,62 +9,79 @@
 </head>
 <body>
 
+  <!-- CURSORE / GLOW -->
+  <div class="cursor-glow"></div>
+
+  <!-- BACKGROUND DECOR -->
   <div class="page-bg"></div>
 
   <!-- HERO -->
   <header class="hero">
+    <div class="hero-overlay"></div>
+
     <div class="hero-content">
-      <div class="hero-text">
-        <span class="eyebrow">Manuel Campanile</span>
-        <h1>Il mio percorso</h1>
-        <p class="hero-subtitle">Classe 5CSA</p>
+      <div class="hero-text reveal-up">
+        <span class="hero-kicker">Manuel Campanile</span>
+        <h1>Manuel Campanile</h1>
+        <p class="hero-class">Classe 5CSA</p>
 
         <p class="hero-quote">
           “Ogni esperienza lascia un segno: il mio percorso racconta chi sono oggi e chi voglio diventare domani.”
         </p>
 
-        <div class="hero-badges">
-          <span>Presentazione personale</span>
-          <span>FSL</span>
-          <span>Educazione civica</span>
+        <div class="hero-buttons">
+          <a href="#sezioni" class="hero-btn primary">
+            Scopri il percorso
+          </a>
         </div>
       </div>
 
-      <div class="hero-visual">
-        <!-- Qui va la tua immagine principale -->
-        <img src="quote-image.png" alt="Percorso personale di crescita" />
+      <div class="hero-image-wrap reveal-up delay-1">
+        <div class="hero-image-card">
+          <img src="quote-image.png" alt="Percorso di crescita personale">
+        </div>
       </div>
     </div>
   </header>
 
   <!-- SEZIONI -->
-  <main class="home-sections">
+  <main class="home-sections" id="sezioni">
+    <div class="section-heading reveal-up">
+      <span class="section-kicker">Le tre aree del percorso</span>
+      <h2>Un racconto in tre sezioni</h2>
+      <p>
+        Presentazione personale, FSL e Educazione Civica: tre parti distinte che raccontano esperienze,
+        competenze e crescita maturate nel corso degli anni.
+      </p>
+    </div>
+
     <section class="cards-grid">
 
       <!-- PRESENTAZIONE -->
-<a href="Presentazione.html" class="doc-card">
-  <div class="doc-card-top">
-    <span class="doc-icon"><i class="fa-regular fa-user"></i></span>
-    <span class="doc-tag">01</span>
-  </div>
+      <a href="Presentazione.html" class="doc-card reveal-up delay-1">
+        <div class="doc-card-top">
+          <span class="doc-icon"><i class="fa-regular fa-user"></i></span>
+          <span class="doc-tag">01</span>
+        </div>
 
-  <div class="doc-card-cover">
-    <img src="presentazione-cover.png" alt="Copertina Presentazione personale" />
-  </div>
+        <div class="doc-card-cover">
+          <img src="presentazione-cover.png" alt="Copertina Presentazione personale" />
+        </div>
 
-  <div class="doc-card-body">
-    <h2>Presentazione personale</h2>
-    <p>
-      Scelte, passioni, sport, volontariato e crescita personale.
-    </p>
-    <span class="doc-link">
-      Apri sezione <i class="fa-solid fa-arrow-right"></i>
-    </span>
-  </div>
-</a>
+        <div class="doc-card-body">
+          <h3>Presentazione personale</h3>
+          <p>
+            Sport, obiettivi, esperienze, volontariato e crescita personale:
+            una panoramica su ciò che mi rappresenta davvero.
+          </p>
+          <span class="doc-link">
+            Apri sezione <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </div>
+      </a>
 
       <!-- FSL -->
-      <a href="pcto.html" class="doc-card">
+      <a href="pcto.html" class="doc-card reveal-up delay-2">
         <div class="doc-card-top">
           <span class="doc-icon"><i class="fa-solid fa-briefcase"></i></span>
           <span class="doc-tag">02</span>
@@ -75,9 +92,10 @@
         </div>
 
         <div class="doc-card-body">
-          <h2>FSL (ex PCTO)</h2>
+          <h3>FSL (ex PCTO)</h3>
           <p>
-            Esperienze formative, orientamento, competenze e percorso svolto.
+            Le esperienze formative più significative svolte durante il triennio,
+            tra orientamento, competenze e attività di crescita.
           </p>
           <span class="doc-link">
             Apri sezione <i class="fa-solid fa-arrow-right"></i>
@@ -86,7 +104,7 @@
       </a>
 
       <!-- EDUCAZIONE CIVICA -->
-      <a href="educazione-civica.html" class="doc-card">
+      <a href="educazione-civica.html" class="doc-card reveal-up delay-3">
         <div class="doc-card-top">
           <span class="doc-icon"><i class="fa-solid fa-leaf"></i></span>
           <span class="doc-tag">03</span>
@@ -97,9 +115,10 @@
         </div>
 
         <div class="doc-card-body">
-          <h2>Educazione Civica</h2>
+          <h3>Educazione Civica</h3>
           <p>
-            Sviluppo economico, sostenibilità e responsabilità verso il futuro.
+            Un approfondimento sul tema dello sviluppo sostenibile, della responsabilità
+            e del rapporto tra crescita economica e futuro.
           </p>
           <span class="doc-link">
             Apri sezione <i class="fa-solid fa-arrow-right"></i>
@@ -110,5 +129,6 @@
     </section>
   </main>
 
+  <script src="script.js"></script>
 </body>
 </html>
